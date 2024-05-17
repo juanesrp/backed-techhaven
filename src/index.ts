@@ -11,6 +11,7 @@ const initialize = async () => {
     await AppDataSource.initialize();
     console.log("Database initialized");
     await preLoadCategories();
+    console.log("Categories preloaded2");
     await preLoadProducts();
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);
